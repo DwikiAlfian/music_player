@@ -1,0 +1,259 @@
+/* CREATED BY DWIKI ALFIAN */
+/* DO NOT COPY WITHOUT PERMISSION */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+.navbar{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+}
+.music-player-detail p{
+  margin: 0;
+  padding-top: 100px;
+  font-family: 'Staatliches',cursive;
+}
+.music-player-detail h3{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.centered{
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+.navlist{
+  float: left;
+}
+.navlist a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navlist a:hover:not(.active){
+  background-color: #111;
+  text-decoration: none;
+}
+.active{
+  background-color: #00dcf0;
+  text-decoration: none;
+}
+.button{
+  display: block;
+  background-color: #00dcf0;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  width: 110px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.button:hover{
+  display: block;
+  background-color: #86edf7;
+  color: white;
+  transition: 0.3s;
+  transform: scale(0.9);
+  text-align: center;
+  padding: 16px;
+  width: 110px;
+  text-decoration: none;
+}
+.card{
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.box{
+  border-radius: 7px;
+  height: 250px;
+  width: 250px;
+  box-shadow: 0px 0px 2px 0px black;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 15px;
+  /* padding: 10px; */
+}
+
+.grid-container > a{
+  text-align: center;
+  padding: auto auto;
+  font-size: 30px;
+  height: 250px;
+  width: 250px;
+}
+
+p.text{
+  margin: 0;
+  padding-top: 92%;
+  display: block;
+  font-size: 20px;
+  color: transparent;
+  transition: 0.3s;
+}
+
+p.text:hover{
+  margin: 0;
+  padding-top: 92%;
+  display: block;
+  font-size: 20px;
+  color: black;
+  transition: 0.3s;
+  /* background-color: rgba(231, 59, 6, 0.24); */
+  background-color: rgb(255, 255, 255, 0.60);
+}
+
+.i-n{
+  text-decoration: none;
+}
+
+.i-h{
+  transition: 0.3s;
+}
+
+.i-h:hover{
+  transition: 0.3s;
+  transform: scale(0.88);
+}
+
+.index-img1{
+  background-image: url('../photo/edsheeran.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.index-img2{
+  background-image: url('../photo/chrismartin.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.index-img3{
+  background-image: url('../photo/qorygore.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.index-img4{
+  background-image: url('../photo/kodaline.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.index-img5{
+  background-image: url('../photo/imagine_dragon.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.index-img6{
+  background-image: url('../photo/drake.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.index-img7{
+  background-image: url('../photo/dua_lipa.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.index-img8{
+  background-image: url('../photo/iwan_fals.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-card{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* MUSIC PLAYER */
+.music-player-bar{
+  bottom: 0;
+  position: fixed;
+  display: grid;
+  grid: auto auto auto auto;
+  width: 100%; 
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: linear-gradient(0deg, rgb(15, 51, 66), black);
+  
+}
+
+.music-player-play{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url('../icon/music_player/play.png');
+  background-size: cover;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  position: static;
+}
+
+.music-player-pause{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url('../icon/music_player/pause.png');
+  background-size: cover;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  position: static;
+}
+
+.music-player-stop{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url('../icon/music_player/stop.png');
+  background-size: cover;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  position: static;
+}
+
+.music-player-card{
+  margin-left: auto;
+  margin-top: 50px;
+  margin-right: auto;
+  position: relative;
+  /* background-image: url('../photo/cover/edsheeran.jpg'); */
+  background-size: cover;
+  animation-name: card-anim;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  height: 500px;
+  width: 1000px;
+  box-shadow: 7px 7px 7px rgba(0, 137, 250, 0.363);
+}
+@keyframes card-anim{
+  0% {background-size: 100%;}
+  50% {background-size: 103%;}
+  100% {background-size: 100%;}
+}
+.music-player-detail{
+  text-align: right;
+  padding-right: 30px;
+  background-image: linear-gradient(90deg,rgba(255, 255, 255,0),rgba(255, 255, 255,0.7));
+  height: 100%;
+  width: 800px;
+  margin-left: auto;
+}
+
